@@ -24,7 +24,7 @@ namespace AICP
             Console.WriteLine("P1 Hours worked per week?");
             HoursPerWeek1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("P1 Hours worked per week: " + HoursPerWeek1);
-            int yrSalary1 = hourlyRate1 * HoursPerWeek1;
+            int yrSalary1 = hourlyRate1 * HoursPerWeek1 * 52;
 
             Console.WriteLine("Person 2");
             Console.WriteLine("P2 Hourly Rate?");
@@ -33,7 +33,7 @@ namespace AICP
             Console.WriteLine("P2 Hours worked per week?");
             HoursPerWeek2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("P2 Hours worked per week: " + HoursPerWeek2);
-            int yrSalary2 = hourlyRate2 * HoursPerWeek2;
+            int yrSalary2 = hourlyRate2 * HoursPerWeek2 * 52;
             ;
             Console.WriteLine("Annual salary of person 1: " + yrSalary1);
             Console.WriteLine("Annual salary of person 2: " + yrSalary2);
