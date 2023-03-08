@@ -16,8 +16,6 @@ namespace AICP
             int hourlyRate2 = 0;
             int HoursPerWeek1 = 0;
             int HoursPerWeek2 = 0;
-            int yrSalary1 = 0;
-            int yrSalary2 = 0;
 
             Console.WriteLine("Person 1");
             Console.WriteLine("P1 Hourly Rate?");
@@ -26,6 +24,7 @@ namespace AICP
             Console.WriteLine("P1 Hours worked per week?");
             HoursPerWeek1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("P1 Hours worked per week: " + HoursPerWeek1);
+            int yrSalary1 = hourlyRate1 * HoursPerWeek1;
 
             Console.WriteLine("Person 2");
             Console.WriteLine("P2 Hourly Rate?");
@@ -34,12 +33,9 @@ namespace AICP
             Console.WriteLine("P2 Hours worked per week?");
             HoursPerWeek2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("P2 Hours worked per week: " + HoursPerWeek2);
-
-            Console.WriteLine("P1 Annual salary?");
-            yrSalary1 = Convert.ToInt32(Console.ReadLine());
+            int yrSalary2 = hourlyRate2 * HoursPerWeek2;
+            ;
             Console.WriteLine("Annual salary of person 1: " + yrSalary1);
-            Console.WriteLine("P2 Annual salary?");
-            yrSalary2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Annual salary of person 2: " + yrSalary2);
 
             bool Ps1vsPs2 = yrSalary1 > yrSalary2;
